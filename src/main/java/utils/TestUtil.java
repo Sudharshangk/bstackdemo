@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.TimeoutException;
 
-
 public class TestUtil {
 
     private WebDriver driver;
@@ -21,18 +20,36 @@ public class TestUtil {
         this.wait = new WebDriverWait(driver, i);
     }
 
-    // Click safely on an element
+    // Updated safeClick: Scroll into view + wait for visibility + click
     public void safeClick(By locator) {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+        ((org.openqa.selenium.JavascriptExecutor) driver)
+            .executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
+        wait.until(ExpectedConditions.visibilityOf(element));
         element.click();
+    }
+
+    // New robust version with retry logic
+    public void safeClickWithRetry(By locator, int maxAttempts) {
+        int attempts = 0;
+        while (attempts < maxAttempts) {
+            try {
+                safeClick(locator);
+                return;
+            } catch (Exception e) {
+                attempts++;
+                pause(1);  // small delay before retry
+            }
+        }
+        throw new RuntimeException("Failed to click element after " + maxAttempts + " attempts: " + locator);
     }
 
     // Wait for visibility
     public WebElement waitForVisible(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
-    
- // ✅ New: Wait until element is clickable
+
+    // Wait until element is clickable
     public WebElement waitForClickable(By locator) {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
@@ -46,6 +63,13 @@ public class TestUtil {
         input.sendKeys(Keys.ENTER);
     }
 
+    // Stable method for react-select dropdowns
+    public void selectReactDropdownStable(By inputLocator, String valueToSelect) {
+        WebElement input = wait.until(ExpectedConditions.elementToBeClickable(inputLocator));
+        input.sendKeys(valueToSelect);
+        input.sendKeys(Keys.ENTER);
+    }
+
     // Send keys safely
     public void sendKeys(By locator, String text) {
         WebElement element = waitForVisible(locator);
@@ -53,12 +77,7 @@ public class TestUtil {
         element.sendKeys(text);
     }
 
-    // Stable method for react-select dropdowns
-    public void selectReactDropdownStable(By inputLocator, String valueToSelect) {
-        WebElement input = wait.until(ExpectedConditions.elementToBeClickable(inputLocator));
-        input.sendKeys(valueToSelect);
-        input.sendKeys(Keys.ENTER);
-    }
+    // Wait for element to be invisible
     public static boolean waitForInvisible(WebDriver driver, By locator, int timeoutInSeconds) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
@@ -68,8 +87,7 @@ public class TestUtil {
         }
     }
 
-
-    // ✅ Pause for manual observation
+    // Pause utility method
     public void pause(int seconds) {
         try {
             Thread.sleep(seconds * 1000L);
