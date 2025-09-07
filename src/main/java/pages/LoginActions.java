@@ -37,12 +37,7 @@ public class LoginActions {
         return helper.waitForVisible(LoginElements.ordersTab).isDisplayed();
     }
     public boolean verifyOrdersNotDisplayed() {
-        try {
-            // This will use default timeout (10s)
-            WebElement orders = helper.waitForVisible(By.id("orders"));
-            return false; // Element appeared — invalid login failed
-        } catch (org.openqa.selenium.TimeoutException e) {
-            return true; // Element did NOT appear — expected behavior
-        }
+        return TestUtil.waitForInvisible(driver, By.id("orders"), 10);
     }
+
 }

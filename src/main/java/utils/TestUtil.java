@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.TimeoutException;
+
 
 public class TestUtil {
 
@@ -57,6 +59,15 @@ public class TestUtil {
         input.sendKeys(valueToSelect);
         input.sendKeys(Keys.ENTER);
     }
+    public static boolean waitForInvisible(WebDriver driver, By locator, int timeoutInSeconds) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+            return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+        } catch (TimeoutException e) {
+            return false;
+        }
+    }
+
 
     // ✅ Pause for manual observation
     public void pause(int seconds) {

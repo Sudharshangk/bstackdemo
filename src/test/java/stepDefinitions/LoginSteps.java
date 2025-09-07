@@ -29,6 +29,7 @@ public class LoginSteps {
 
     @Then("the user should not be logged in")
     public void the_user_should_not_be_logged_in() {
-        Assert.assertFalse(login.verifyOrdersDisplayed(), "Invalid user should not log in!");
+        Assert.assertTrue(login.verifyOrdersNotDisplayed());
     }
+
 }
