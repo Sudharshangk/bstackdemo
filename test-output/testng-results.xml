@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-07T18:48:11 IST" name="Default suite" finished-at="2025-09-07T18:48:41 IST" duration-ms="29945">
+    <groups>
+    </groups>
+    <test started-at="2025-09-07T18:48:11 IST" name="Default test" finished-at="2025-09-07T18:48:41 IST" duration-ms="29945">
+      <class name="testcases.E2ETest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:11 IST" name="setUp" finished-at="2025-09-07T18:48:27 IST" duration-ms="16771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:27 IST" name="setupPages" finished-at="2025-09-07T18:48:27 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method signature="verifyLoginPage()[pri:1, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:27 IST" name="verifyLoginPage" finished-at="2025-09-07T18:48:32 IST" duration-ms="4189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPage -->
+        <test-method signature="verifySortLowestToHighest()[pri:2, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:32 IST" name="verifySortLowestToHighest" finished-at="2025-09-07T18:48:32 IST" depends-on-methods="testcases.E2ETest.verifyLoginPage" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySortLowestToHighest -->
+        <test-method signature="verifySortHighestToLowest()[pri:3, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:32 IST" name="verifySortHighestToLowest" finished-at="2025-09-07T18:48:32 IST" depends-on-methods="testcases.E2ETest.verifySortLowestToHighest" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySortHighestToLowest -->
+        <test-method signature="verifyGoogleFilter()[pri:4, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:32 IST" name="verifyGoogleFilter" finished-at="2025-09-07T18:48:32 IST" depends-on-methods="testcases.E2ETest.verifySortHighestToLowest" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGoogleFilter -->
+        <test-method signature="verifyAddPixel4()[pri:5, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:32 IST" name="verifyAddPixel4" finished-at="2025-09-07T18:48:33 IST" depends-on-methods="testcases.E2ETest.verifyGoogleFilter" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddPixel4 -->
+        <test-method signature="verifyIncreaseQuantity()[pri:6, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:33 IST" name="verifyIncreaseQuantity" finished-at="2025-09-07T18:48:33 IST" depends-on-methods="testcases.E2ETest.verifyAddPixel4" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIncreaseQuantity -->
+        <test-method signature="verifyCloseCart()[pri:7, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:33 IST" name="verifyCloseCart" finished-at="2025-09-07T18:48:33 IST" depends-on-methods="testcases.E2ETest.verifyIncreaseQuantity" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCloseCart -->
+        <test-method signature="verifyAddPixel3()[pri:8, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:33 IST" name="verifyAddPixel3" finished-at="2025-09-07T18:48:33 IST" depends-on-methods="testcases.E2ETest.verifyCloseCart" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddPixel3 -->
+        <test-method signature="verifyCheckoutStart()[pri:9, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:33 IST" name="verifyCheckoutStart" finished-at="2025-09-07T18:48:34 IST" depends-on-methods="testcases.E2ETest.verifyAddPixel3" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutStart -->
+        <test-method signature="verifyAddressEntry()[pri:10, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:34 IST" name="verifyAddressEntry" finished-at="2025-09-07T18:48:39 IST" depends-on-methods="testcases.E2ETest.verifyCheckoutStart" duration-ms="5113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddressEntry -->
+        <test-method signature="verifyReceiptDownload()[pri:11, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:39 IST" name="verifyReceiptDownload" finished-at="2025-09-07T18:48:39 IST" depends-on-methods="testcases.E2ETest.verifyAddressEntry" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReceiptDownload -->
+        <test-method signature="verifyContinueShopping()[pri:12, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:39 IST" name="verifyContinueShopping" finished-at="2025-09-07T18:48:39 IST" depends-on-methods="testcases.E2ETest.verifyReceiptDownload" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContinueShopping -->
+        <test-method signature="verifyAddPixel4ToFavourites()[pri:13, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:39 IST" name="verifyAddPixel4ToFavourites" finished-at="2025-09-07T18:48:39 IST" depends-on-methods="testcases.E2ETest.verifyContinueShopping" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddPixel4ToFavourites -->
+        <test-method signature="verifyOfferPageNavigation()[pri:14, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:39 IST" name="verifyOfferPageNavigation" finished-at="2025-09-07T18:48:40 IST" depends-on-methods="testcases.E2ETest.verifyAddPixel4ToFavourites" duration-ms="481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOfferPageNavigation -->
+        <test-method signature="verifyLogout()[pri:15, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:40 IST" name="verifyLogout" finished-at="2025-09-07T18:48:40 IST" depends-on-methods="testcases.E2ETest.verifyOfferPageNavigation" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:40 IST" name="tearDown" finished-at="2025-09-07T18:48:41 IST" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testcases.E2ETest@4e08711f]" started-at="2025-09-07T18:48:41 IST" name="tearDownSuite" finished-at="2025-09-07T18:48:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- testcases.E2ETest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
