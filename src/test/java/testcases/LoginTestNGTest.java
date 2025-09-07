@@ -15,6 +15,7 @@ public class LoginTestNGTest {
     @BeforeMethod
     public void setUp() {
         driver = DriverFactory.getDriver();
+        driver.get("https://bstackdemo.com/signin");  // 👈 Replace with your actual app URL
         login = new LoginActions(driver);
     }
 

@@ -9,8 +9,8 @@
       <class name="testcases.E2ETest">
         <methods>
           <include name="setUp"/>
+          <include name="verifyOfferPageNavigation"/>
           <include name="verifyAddPixel4"/>
-          <include name="verifyInvalidLogin"/>
           <include name="verifyReceiptDownload"/>
           <include name="verifyCloseCart"/>
           <include name="verifyAddressEntry"/>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 07 18:48:11 IST 2025</td>
+<td>Started on:</td><td>Sun Sep 07 19:53:16 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29945 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25203 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,80 +76,65 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.E2ETest.verifyAddPixel4()'><b>verifyAddPixel4</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid user logs in", "Login Functionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: login-btn (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\SUDHAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62879/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d048c3ce1b1d49cdcb8c6e75c552c51
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utils.TestUtil.safeClick(TestUtil.java:24)
+	at pages.LoginActions.openSigninPanel(LoginActions.java:21)
+	at stepDefinitions.LoginSteps.the_user_enters_username_and_password(LoginSteps.java:15)
+	at ✽.the user enters username &quot;demouser&quot; and password &quot;testingisfun99&quot;(file:///C:/Users/Sudharshan%20G%20K/Desktop/FinalCapstoneProject/bstackdemo/src/test/resources/features/Login.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2117103751", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2117103751'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: login-btn (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\SUDHAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62879}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62879/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d048c3ce1b1d49cdcb8c6e75c552c51
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utils.TestUtil.safeClick(TestUtil.java:24)
+	at pages.LoginActions.openSigninPanel(LoginActions.java:21)
+	at stepDefinitions.LoginSteps.the_user_enters_username_and_password(LoginSteps.java:15)
+	at ✽.the user enters username &quot;demouser&quot; and password &quot;testingisfun99&quot;(file:///C:/Users/Sudharshan%20G%20K/Desktop/FinalCapstoneProject/bstackdemo/src/test/resources/features/Login.feature:9)
+</pre></div></td>
+<td>11</td>
+<td>runners.TestRunner@55fe41ea</td></tr>
 <tr>
-<td title='testcases.E2ETest.verifyLoginPage()'><b>verifyLoginPage</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>4</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyGoogleFilter()'><b>verifyGoogleFilter</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyCheckoutStart()'><b>verifyCheckoutStart</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyReceiptDownload()'><b>verifyReceiptDownload</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyAddressEntry()'><b>verifyAddressEntry</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>5</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyAddPixel4ToFavourites()'><b>verifyAddPixel4ToFavourites</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyLogout()'><b>verifyLogout</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifySortLowestToHighest()'><b>verifySortLowestToHighest</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyIncreaseQuantity()'><b>verifyIncreaseQuantity</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifySortHighestToLowest()'><b>verifySortHighestToLowest</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyCloseCart()'><b>verifyCloseCart</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyAddPixel3()'><b>verifyAddPixel3</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyContinueShopping()'><b>verifyContinueShopping</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
-<tr>
-<td title='testcases.E2ETest.verifyOfferPageNavigation()'><b>verifyOfferPageNavigation</b><br>Test class: testcases.E2ETest</td>
-<td></td>
-<td>0</td>
-<td>testcases.E2ETest@4e08711f</td></tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid user logs in", "Login Functionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: login-btn (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\SUDHAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62857}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62857/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55324625d945747c6e1cabc352fc2e87
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utils.TestUtil.safeClick(TestUtil.java:24)
+	at pages.LoginActions.openSigninPanel(LoginActions.java:21)
+	at stepDefinitions.LoginSteps.the_user_enters_username_and_password(LoginSteps.java:15)
+	at ✽.the user enters username &quot;wrong&quot; and password &quot;wrong&quot;(file:///C:/Users/Sudharshan%20G%20K/Desktop/FinalCapstoneProject/bstackdemo/src/test/resources/features/Login.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1674390738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1674390738'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: login-btn (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\SUDHAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62857}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62857/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55324625d945747c6e1cabc352fc2e87
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utils.TestUtil.safeClick(TestUtil.java:24)
+	at pages.LoginActions.openSigninPanel(LoginActions.java:21)
+	at stepDefinitions.LoginSteps.the_user_enters_username_and_password(LoginSteps.java:15)
+	at ✽.the user enters username &quot;wrong&quot; and password &quot;wrong&quot;(file:///C:/Users/Sudharshan%20G%20K/Desktop/FinalCapstoneProject/bstackdemo/src/test/resources/features/Login.feature:4)
+</pre></div></td>
+<td>12</td>
+<td>runners.TestRunner@55fe41ea</td></tr>
 </table><p>
 </body>
 </html>

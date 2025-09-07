@@ -3,29 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.E2ETest">
+      <class name="runners.TestRunner">
         <methods>
-          <include name="setUp"/>
-          <include name="verifyOfferPageNavigation"/>
-          <include name="verifyAddPixel4"/>
-          <include name="verifyReceiptDownload"/>
-          <include name="verifyCloseCart"/>
-          <include name="verifyAddressEntry"/>
-          <include name="verifyLogout"/>
-          <include name="tearDown"/>
-          <include name="verifyAddPixel3"/>
-          <include name="verifySortLowestToHighest"/>
-          <include name="tearDownSuite"/>
-          <include name="verifyContinueShopping"/>
-          <include name="verifyIncreaseQuantity"/>
-          <include name="verifyCheckoutStart"/>
-          <include name="setupPages"/>
-          <include name="verifyAddPixel4ToFavourites"/>
-          <include name="verifySortHighestToLowest"/>
-          <include name="verifyGoogleFilter"/>
-          <include name="verifyLoginPage"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- testcases.E2ETest -->
+      </class> <!-- runners.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
