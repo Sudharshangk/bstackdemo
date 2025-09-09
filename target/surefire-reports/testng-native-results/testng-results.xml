@@ -2,104 +2,104 @@
 <testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-09T11:55:35 IST" name="Surefire suite" finished-at="2025-09-09T11:56:16 IST" duration-ms="40258">
+  <suite started-at="2025-09-09T12:02:44 IST" name="Surefire suite" finished-at="2025-09-09T12:03:26 IST" duration-ms="41468">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@6dc17b83]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-09T11:55:35 IST" name="Surefire test" finished-at="2025-09-09T11:56:16 IST" duration-ms="40258">
+    <test started-at="2025-09-09T12:02:44 IST" name="Surefire test" finished-at="2025-09-09T12:03:26 IST" duration-ms="41468">
       <class name="testcases.E2ETest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:55:56 IST" name="setUp" finished-at="2025-09-09T11:56:05 IST" duration-ms="8631" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:07 IST" name="setUp" finished-at="2025-09-09T12:03:09 IST" duration-ms="1827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:05 IST" name="setupPages" finished-at="2025-09-09T11:56:05 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:09 IST" name="setupPages" finished-at="2025-09-09T12:03:09 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="verifyLoginPage()[pri:1, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:05 IST" name="verifyLoginPage" finished-at="2025-09-09T11:56:08 IST" duration-ms="3205" status="PASS">
+        <test-method signature="verifyLoginPage()[pri:1, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:09 IST" name="verifyLoginPage" finished-at="2025-09-09T12:03:16 IST" duration-ms="7758" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPage -->
-        <test-method signature="verifySortLowestToHighest()[pri:2, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:08 IST" name="verifySortLowestToHighest" finished-at="2025-09-09T11:56:08 IST" depends-on-methods="testcases.E2ETest.verifyLoginPage" duration-ms="221" status="PASS">
+        <test-method signature="verifySortLowestToHighest()[pri:2, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:16 IST" name="verifySortLowestToHighest" finished-at="2025-09-09T12:03:17 IST" depends-on-methods="testcases.E2ETest.verifyLoginPage" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySortLowestToHighest -->
-        <test-method signature="verifySortHighestToLowest()[pri:3, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:08 IST" name="verifySortHighestToLowest" finished-at="2025-09-09T11:56:09 IST" depends-on-methods="testcases.E2ETest.verifySortLowestToHighest" duration-ms="205" status="PASS">
+        <test-method signature="verifySortHighestToLowest()[pri:3, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:17 IST" name="verifySortHighestToLowest" finished-at="2025-09-09T12:03:17 IST" depends-on-methods="testcases.E2ETest.verifySortLowestToHighest" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySortHighestToLowest -->
-        <test-method signature="verifyGoogleFilter()[pri:4, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:09 IST" name="verifyGoogleFilter" finished-at="2025-09-09T11:56:09 IST" depends-on-methods="testcases.E2ETest.verifySortHighestToLowest" duration-ms="162" status="PASS">
+        <test-method signature="verifyGoogleFilter()[pri:4, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:17 IST" name="verifyGoogleFilter" finished-at="2025-09-09T12:03:17 IST" depends-on-methods="testcases.E2ETest.verifySortHighestToLowest" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGoogleFilter -->
-        <test-method signature="verifyAddPixel4()[pri:5, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:09 IST" name="verifyAddPixel4" finished-at="2025-09-09T11:56:09 IST" depends-on-methods="testcases.E2ETest.verifyGoogleFilter" duration-ms="220" status="PASS">
+        <test-method signature="verifyAddPixel4()[pri:5, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:17 IST" name="verifyAddPixel4" finished-at="2025-09-09T12:03:17 IST" depends-on-methods="testcases.E2ETest.verifyGoogleFilter" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPixel4 -->
-        <test-method signature="verifyIncreaseQuantity()[pri:6, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:09 IST" name="verifyIncreaseQuantity" finished-at="2025-09-09T11:56:09 IST" depends-on-methods="testcases.E2ETest.verifyAddPixel4" duration-ms="219" status="PASS">
+        <test-method signature="verifyIncreaseQuantity()[pri:6, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:17 IST" name="verifyIncreaseQuantity" finished-at="2025-09-09T12:03:18 IST" depends-on-methods="testcases.E2ETest.verifyAddPixel4" duration-ms="726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIncreaseQuantity -->
-        <test-method signature="verifyCloseCart()[pri:7, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:09 IST" name="verifyCloseCart" finished-at="2025-09-09T11:56:09 IST" depends-on-methods="testcases.E2ETest.verifyIncreaseQuantity" duration-ms="187" status="PASS">
+        <test-method signature="verifyCloseCart()[pri:7, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:18 IST" name="verifyCloseCart" finished-at="2025-09-09T12:03:18 IST" depends-on-methods="testcases.E2ETest.verifyIncreaseQuantity" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCloseCart -->
-        <test-method signature="verifyAddPixel3()[pri:8, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:09 IST" name="verifyAddPixel3" finished-at="2025-09-09T11:56:10 IST" depends-on-methods="testcases.E2ETest.verifyCloseCart" duration-ms="337" status="PASS">
+        <test-method signature="verifyAddPixel3()[pri:8, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:18 IST" name="verifyAddPixel3" finished-at="2025-09-09T12:03:18 IST" depends-on-methods="testcases.E2ETest.verifyCloseCart" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPixel3 -->
-        <test-method signature="verifyCheckoutStart()[pri:9, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:10 IST" name="verifyCheckoutStart" finished-at="2025-09-09T11:56:10 IST" depends-on-methods="testcases.E2ETest.verifyAddPixel3" duration-ms="517" status="PASS">
+        <test-method signature="verifyCheckoutStart()[pri:9, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:18 IST" name="verifyCheckoutStart" finished-at="2025-09-09T12:03:19 IST" depends-on-methods="testcases.E2ETest.verifyAddPixel3" duration-ms="567" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCheckoutStart -->
-        <test-method signature="verifyAddressEntry()[pri:10, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:10 IST" name="verifyAddressEntry" finished-at="2025-09-09T11:56:14 IST" depends-on-methods="testcases.E2ETest.verifyCheckoutStart" duration-ms="3588" status="PASS">
+        <test-method signature="verifyAddressEntry()[pri:10, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:19 IST" name="verifyAddressEntry" finished-at="2025-09-09T12:03:24 IST" depends-on-methods="testcases.E2ETest.verifyCheckoutStart" duration-ms="4693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddressEntry -->
-        <test-method signature="verifyReceiptDownload()[pri:11, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:14 IST" name="verifyReceiptDownload" finished-at="2025-09-09T11:56:14 IST" depends-on-methods="testcases.E2ETest.verifyAddressEntry" duration-ms="140" status="PASS">
+        <test-method signature="verifyReceiptDownload()[pri:11, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:24 IST" name="verifyReceiptDownload" finished-at="2025-09-09T12:03:24 IST" depends-on-methods="testcases.E2ETest.verifyAddressEntry" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReceiptDownload -->
-        <test-method signature="verifyContinueShopping()[pri:12, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:14 IST" name="verifyContinueShopping" finished-at="2025-09-09T11:56:14 IST" depends-on-methods="testcases.E2ETest.verifyReceiptDownload" duration-ms="230" status="PASS">
+        <test-method signature="verifyContinueShopping()[pri:12, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:24 IST" name="verifyContinueShopping" finished-at="2025-09-09T12:03:24 IST" depends-on-methods="testcases.E2ETest.verifyReceiptDownload" duration-ms="266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContinueShopping -->
-        <test-method signature="verifyAddPixel4ToFavourites()[pri:13, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:14 IST" name="verifyAddPixel4ToFavourites" finished-at="2025-09-09T11:56:14 IST" depends-on-methods="testcases.E2ETest.verifyContinueShopping" duration-ms="277" status="PASS">
+        <test-method signature="verifyAddPixel4ToFavourites()[pri:13, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:24 IST" name="verifyAddPixel4ToFavourites" finished-at="2025-09-09T12:03:25 IST" depends-on-methods="testcases.E2ETest.verifyContinueShopping" duration-ms="809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPixel4ToFavourites -->
-        <test-method signature="verifyOfferPageNavigation()[pri:14, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:14 IST" name="verifyOfferPageNavigation" finished-at="2025-09-09T11:56:15 IST" depends-on-methods="testcases.E2ETest.verifyAddPixel4ToFavourites" duration-ms="886" status="PASS">
+        <test-method signature="verifyOfferPageNavigation()[pri:14, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:25 IST" name="verifyOfferPageNavigation" finished-at="2025-09-09T12:03:25 IST" depends-on-methods="testcases.E2ETest.verifyAddPixel4ToFavourites" duration-ms="534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOfferPageNavigation -->
-        <test-method signature="verifyLogout()[pri:15, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:15 IST" name="verifyLogout" finished-at="2025-09-09T11:56:15 IST" depends-on-methods="testcases.E2ETest.verifyOfferPageNavigation" duration-ms="170" status="PASS">
+        <test-method signature="verifyLogout()[pri:15, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:25 IST" name="verifyLogout" finished-at="2025-09-09T12:03:26 IST" depends-on-methods="testcases.E2ETest.verifyOfferPageNavigation" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:15 IST" name="tearDown" finished-at="2025-09-09T11:56:16 IST" duration-ms="253" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:26 IST" name="tearDown" finished-at="2025-09-09T12:03:26 IST" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testcases.E2ETest@4cc451f2]" started-at="2025-09-09T11:56:16 IST" name="tearDownSuite" finished-at="2025-09-09T11:56:16 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testcases.E2ETest@6379eb]" started-at="2025-09-09T12:03:26 IST" name="tearDownSuite" finished-at="2025-09-09T12:03:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
       </class> <!-- testcases.E2ETest -->
       <class name="runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@6dc17b83]" started-at="2025-09-09T11:55:36 IST" name="setUpClass" finished-at="2025-09-09T11:55:36 IST" duration-ms="663" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@6dc17b83]" started-at="2025-09-09T12:02:44 IST" name="setUpClass" finished-at="2025-09-09T12:02:45 IST" duration-ms="755" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@476fde05]]>
+                <![CDATA[org.testng.TestRunner@4f664bee]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@6dc17b83]" started-at="2025-09-09T11:55:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-09T11:55:45 IST" duration-ms="8779" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@6dc17b83]" started-at="2025-09-09T12:02:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-09T12:02:56 IST" duration-ms="10707" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@6dc17b83]" started-at="2025-09-09T11:55:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-09T11:55:56 IST" duration-ms="11186" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@6dc17b83]" started-at="2025-09-09T12:02:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-09T12:03:07 IST" duration-ms="10848" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,7 +131,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@6dc17b83]" started-at="2025-09-09T11:55:56 IST" name="tearDownClass" finished-at="2025-09-09T11:55:56 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@6dc17b83]" started-at="2025-09-09T12:03:07 IST" name="tearDownClass" finished-at="2025-09-09T12:03:07 IST" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
