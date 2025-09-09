@@ -23,7 +23,7 @@ public class TestListener implements ITestListener {
         try {
 			extent = ExtentReportManager.getReporter();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
     }

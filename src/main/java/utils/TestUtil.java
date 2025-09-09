@@ -20,7 +20,7 @@ public class TestUtil {
         this.wait = new WebDriverWait(driver, i);
     }
 
-    // Updated safeClick: Scroll into view + wait for visibility + click
+    // Scroll into view + wait for visibility + click
     public void safeClick(By locator) {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         ((org.openqa.selenium.JavascriptExecutor) driver)
@@ -38,7 +38,7 @@ public class TestUtil {
                 return;
             } catch (Exception e) {
                 attempts++;
-                pause(1);  // small delay before retry
+                pause(1); 
             }
         }
         throw new RuntimeException("Failed to click element after " + maxAttempts + " attempts: " + locator);

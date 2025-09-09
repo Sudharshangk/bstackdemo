@@ -17,12 +17,12 @@ public class CartActions {
         this.helper = new TestUtil(driver, Duration.ofSeconds(10));
     }
 
-    // 🔹 Filters
+    //  Filters
     public void filterGoogleBrand() {
         helper.safeClickWithRetry(CartElements.googleFilterCheckbox, 3);
     }
 
-    // 🔹 Google Products
+    //  Google Products
     public void addPixel4() {
         helper.safeClickWithRetry(CartElements.pixel4Add, 3);
     }
@@ -31,7 +31,7 @@ public class CartActions {
         helper.safeClickWithRetry(CartElements.pixel3Add, 3);
     }
 
-    // 🔹 Cart Actions
+    // Cart Actions
     public void increaseProductQuantity() {
         helper.waitForVisible(CartElements.sideCart);
         helper.safeClickWithRetry(CartElements.addQuantityBtn, 3);
@@ -55,7 +55,7 @@ public class CartActions {
         helper.safeClickWithRetry(CartElements.closeCartIcon, 3);
     }
 
-    // 🔹 Generic product quantity validator
+    //  Generic product quantity validator
     public boolean confirmProductQuantity(String productName, int expectedQty) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

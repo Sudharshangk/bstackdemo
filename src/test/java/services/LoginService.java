@@ -12,7 +12,7 @@ public class LoginService {
     }
 
     public void login() {
-        // ✅ Using actual creds
+   
         if ("demouser".equals(username) && "testingisfun99".equals(password)) {
             loggedIn = true;
         } else {

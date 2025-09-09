@@ -25,7 +25,7 @@ public class ScreenshotUtil {
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
             String path = "reports/Screenshots/" + methodName + "_" + timestamp + ".png";
-//            Files.createDirectories(Paths.get("Screenshots"));
+
             Files.copy(src.toPath(), Paths.get(path));
             return path;
         } catch (IOException e) {

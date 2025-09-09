@@ -4,13 +4,13 @@ package pages;
 import org.openqa.selenium.By;
 
 public class FavouriteElements {
-    // ✅ Heart (favourite) button inside Google Pixel 4 card (id=17)
+    //  Heart (favourite) button inside Google Pixel 4 card (id=17)
     public static By googlePixel4Favourite = By.xpath("//div[@id='17']//button[contains(@class,'MuiIconButton-root')]");
 
-    // ✅ Navbar favourite link
+    // Navbar favourite link
     public static By favouritesNav = By.id("favourites");
 
-    // ✅ Verify Google Pixel 4 inside favourites page
+    // Verify Google Pixel 4 inside favourites page
     public static By googlePixel4InFavourites = By.xpath("//div[@id='17']");
 
  // Offer page link in navbar

@@ -9,7 +9,7 @@ public class DriverFactory {
 
     public static void initDriver() {
         if (driver == null) {
-            // Set path to your chromedriver explicitly
+           
             System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver-win64\\chromedriver.exe");
             
             ChromeOptions options = new ChromeOptions();

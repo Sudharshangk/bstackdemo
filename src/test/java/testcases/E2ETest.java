@@ -79,7 +79,7 @@ public class E2ETest extends BaseTest {
         Assert.assertTrue(cart.confirmProductQuantity("Pixel 3", 1), "Google Pixel 3 not added!");
     }
 
-    // 🔹 Checkout tests
+
     @Test(priority = 9, dependsOnMethods = "verifyAddPixel3")
     public void verifyCheckoutStart() {
         checkout.startCheckout();
@@ -88,7 +88,7 @@ public class E2ETest extends BaseTest {
 
     @Test(priority = 10, dependsOnMethods = "verifyCheckoutStart")
     public void verifyAddressEntry() {
-        checkout.fillAddressForm("Sudharshan", "G K", "#200 Street Main", "Bengaluru", "91090");
+        checkout.fillAddressForm("Sudharshan", "G K", "#200 Street Main", "Bengaluru", "56990");
         Assert.assertTrue(checkout.confirmOrderPlaced(), "Order not placed successfully!");
     }
 
@@ -104,7 +104,7 @@ public class E2ETest extends BaseTest {
         Assert.assertTrue(login.verifyOrdersDisplayed(), "Orders not visible after continue shopping!");
     }
 
-    // 🔹 Favourites test (moved here, after continue shopping)
+
     @Test(priority = 13, dependsOnMethods = "verifyContinueShopping")
     public void verifyAddPixel4ToFavourites() {
         favourite.addGooglePixel4ToFavourites();
@@ -113,14 +113,14 @@ public class E2ETest extends BaseTest {
                 "Google Pixel 4 not found in favourites!");
     }
 
- // 🔹 Test 14: Open Offer page
+
     @Test(priority = 14, dependsOnMethods = "verifyAddPixel4ToFavourites")
     public void verifyOfferPageNavigation() {
         favourite.openOfferPage();
         Assert.assertTrue(favourite.verifyOfferPageDisplayed(), "Offer page not opened!");
     }
 
-    // 🔹 Test 15: Logout
+
     @Test(priority = 15, dependsOnMethods = "verifyOfferPageNavigation")
     public void verifyLogout() {
         logout.performLogout();
