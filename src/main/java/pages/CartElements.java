@@ -3,8 +3,11 @@ package pages;
 import org.openqa.selenium.By;
 
 public class CartElements {
-    //  Google Filter
+    // Google Filter
 	//testjenkins
+	// Google Filter
+		//testjenkins
+	//test
     public static By googleFilterCheckbox = By.xpath("//label[span[text()='Google']]");
 
     //  Google Products
